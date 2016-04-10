@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonC"
+            style="@style/math_actions"
+            android:background="@color/colorB_Button"
+            android:onClick="cleanMathLine"
+            android:text="@string/buttonClean"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="100%"
+
+            />
+        <Button
+            android:id="@+id/buttonPlus"
+            style="@style/math_actions"
+
+            android:onClick="addiction"
+            android:text="@string/buttonPlus"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="100%"
+            android:layout_below="@id/buttonC"
+
+            />
+        <Button
+            android:id="@+id/buttonMinus"
+            style="@style/math_actions"
+            android:layout_below="@id/buttonPlus"
+            android:onClick="substraction"
+            android:text="@string/buttonMinus"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="100%"
+
+            />
+        <Button
+            android:id="@+id/buttonMultiply"
+            style="@style/math_actions"
+            android:layout_below="@id/buttonMinus"
+            android:onClick="multiplication"
+            android:text="@string/buttonMultiply"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="100%"
+
+            />
+        <Button
+            android:id="@+id/buttonDevide"
+            style="@style/math_actions"
+            android:layout_below="@id/buttonMultiply"
+            android:onClick="devidion"
+            android:text="@string/buttonDevide"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="100%"
+
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>

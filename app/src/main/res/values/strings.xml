@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">No Brains</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_new_item">One more settings item</string>
+    <string name="buttonPlus">+</string>
+    <string name="buttonMinus">-</string>
+    <string name="buttonMultiply">×</string>
+    <string name="buttonDevide">÷</string>
+    <string name="buttonClean">C</string>
+</resources>
