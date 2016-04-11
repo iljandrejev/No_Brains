@@ -200,6 +200,8 @@ public class MainActivity extends AppCompatActivity {
 
         isOperatorSet= false;
         canSend=false;
+        TextView result = (TextView)findViewById(R.id.mathLineResult);
+        result.setText("");
         updateView();
     }
 
