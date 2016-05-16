@@ -57,6 +57,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent();
         intent.setAction("com.example.Nobrains_Math_Request");
         intent.putExtra("mathLine",mathLine);
+        intent.putExtra("num1",mathLine[0]);
+        intent.putExtra("num2",mathLine[2]);
+        intent.putExtra("operator",mathLine[1]);
         sendBroadcast(intent);
     }
     
@@ -210,9 +213,13 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             TextView mathResult = (TextView) findViewById(R.id.mathLineResult);
+            Log.d(TAG,"Lauched nobrains receiver");
             Bundle extras = intent.getExtras();
             if(extras != null){
+
                 String result = extras.getString("mathResult");
+
+                Log.d(TAG,"Result response " + result);
                 mathResult.setText(result);
             }
         }

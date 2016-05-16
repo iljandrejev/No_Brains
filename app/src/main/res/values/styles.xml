@@ -18,20 +18,25 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="mathLine" parent="@android:style/Widget.TextView">
-        <item name="android:textSize">25sp</item>
+        <item name="android:textSize">30sp</item>
         <item name="android:textColor">@color/colorNumButtom</item>
+        <item name="android:gravity">bottom</item>
     </style>
 
     <style name="mathLine_Result" parent="@android:style/Widget.TextView">
-        <item name="android:textSize">45sp</item>
+        <item name="android:textSize">50sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/colorNumButtom</item>
+        <item name="android:gravity">bottom</item>
+
     </style>
 
 
     <style name="button_game" parent="@android:style/Widget.Button">
         <item name="android:background">@drawable/button_game</item>
-        <item name="android:textSize">25sp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
 
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:gravity">center_horizontal|center_vertical</item>
@@ -40,9 +45,12 @@
     </style>
 
     <style name="math_actions" parent="@android:style/Widget.Button">
-        <item name="android:background">@drawable/button_math_actions</item>
+        <item name="android:background">@drawable/button_game</item>
         <item name="android:clickable">true</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+
+
         <item name="android:focusable">true</item>
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:gravity">center_horizontal|center_vertical</item>
